@@ -784,8 +784,14 @@ header nav ul li.active-menu-item a {
   color: #666;
   transition: all 0.2s ease-in-out;
 }
-.contact .contact-inner .contact-left a:hover > i {
+.contact .contact-inner .contact-left a:hover > .fa-linkedin-square {
   color: #007bb6;
+}
+.contact .contact-inner .contact-left a .fa-github {
+  margin-left: 1rem;
+}
+.contact .contact-inner .contact-left a:hover > .fa-github {
+  color: #4078c0;
 }
 .contact .contact-inner .contact-left strong {
   font-weight: bold;

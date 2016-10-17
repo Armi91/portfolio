@@ -240,7 +240,6 @@ header{
 	color: @basic-background-color;
 	h3{
 		.header-mixin(1.3rem;2rem;@basic-background-color);
-		// .translate3d(0%;-400%;0%);
 		.variable-transition(0.5s);
 	}
 	a{
@@ -277,8 +276,14 @@ header{
 				color: @basic-text-color;
 				.basic-transition;
 				}
-				&:hover > i{
+				&:hover > .fa-linkedin-square{
 					color: #007bb6;
+				}
+				.fa-github{
+					margin-left: 1rem;
+				}
+				&:hover > .fa-github{
+					color: #4078c0;
 				}
 			}
 			strong{
