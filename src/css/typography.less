@@ -1,0 +1,46 @@
+@basic-font-size: 1rem;
+@basic-line-height: 1.9rem;
+@paragraph-margin: 0 0 1rem;
+
+
+.header-mixin(@header-font-size;@header-margin-bottom;@header-color: @basic-header-color) {
+	font-size: @header-font-size;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: @header-margin-bottom;
+	color: @header-color;
+	font-weight: 400;
+}
+
+@font-family-primary: 'Didact Gothic', sans-serif;
+@font-family-secondary: "Lato", sans-serif;
+
+body {
+	font-size: @basic-font-size;
+	font-family: @font-family-primary;
+	color: @basic-text-color;
+}
+
+p {
+	margin: @paragraph-margin;
+	line-height: @basic-line-height;
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+}
+
+h2 {
+	.header-mixin(1.6rem;3.2rem);
+	font-family: 'Comfortaa', sans-serif;
+	@media @desktop{
+		.header-mixin(2rem;4rem);
+	}
+}
+
+h3 {
+	.header-mixin(1.4rem;1.4rem);
+	font-family: 'Comfortaa', sans-serif;
+}
